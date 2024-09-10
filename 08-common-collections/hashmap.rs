@@ -10,7 +10,7 @@ fn main() {
 
   // Acessando valores com uma chave
   let team_name = String::from("Blue");
-  let score = scores.get(&team_name); // retorna um Optional
+  let score = scores.get(&team_name); // retorna um Option
   match score {
     Some(&value) => println!("O time {} tem {} pontos.", team_name, value),
     None => println!("O time {} não foi encontrado.", team_name),
